@@ -75,7 +75,7 @@ jekyll serve --watch
 Jekyll이 디렉토리에 있는 설정 및 마크다운 파일들을 정적 페이지로 변환하고 작업이 완료 되면 서버가 실행되고 있다는 문구를 터미널에서 확인할 수 있다. 서버가 정상적으로 수행되었다면 브라우저를 열어 `localhost:4000` 을 통해 Jekyll이 잘 나타나는지 확인해 볼 수 있다.
 
 [image:9804C433-97B6-4812-BE9B-C71EBE57389E-12150-00001DAE07A8787C/20170910_02.png]
-<img src="//assets/images/20170910_02.png" title="Localhost에서 작동하는 Jekyll">
+<img src="/assets/images/20170910_02.png" title="Localhost에서 작동하는 Jekyll">
 
 이제 Github 레포지토리를 생성해야 한다. Github 레포지토리의 이름을 위에서 사용한 `{깃허브계정명}.github.io` 로 생성한다.
 
