@@ -36,10 +36,10 @@ import LocalAuthentication
 
 ```swift
 @IBAction func toggleTouchIDButton(_ sender: UIButton) {
-// LAContext Instance creation
-let authContext = LAContext()
+    // LAContext Instance creation
+    let authContext = LAContext()
 
-...
+    ...
 }
 ```
 
@@ -50,18 +50,18 @@ Touch ID 사용이 가능한 기기인지 확인하는 작업은 비교적 매�
 
 ```swift
 @IBAction func toggleTouchIDButton(_ sender: UIButton) {
-// LAContext Instance creation
-let authContext = LAContext()
+    // LAContext Instance creation
+    let authContext = LAContext()
 
-// Error store variable
-var error: NSError?
+    // Error store variable
+    var error: NSError?
 
-// Check if the device has finger print sensor
-guard authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-return
-}
+    // Check if the device has finger print sensor
+    guard authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+        return
+    }
 
-...
+    ...
 }
 ```
 
@@ -85,27 +85,28 @@ return
 
 ```swift
 @IBAction func toggleTouchIDButton(_ sender: UIButton) {
-// LAContext Instance creation
-let authContext = LAContext()
+    // LAContext Instance creation
+    let authContext = LAContext()
 
-// Error store variable
-var error: NSError?
+    // Error store variable
+    var error: NSError?
 
-// Check if the device has finger print sensor
-guard authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-return
-}
+    // Check if the device has finger print sensor
+    guard authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+        return
+    }
 
-authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "홈 버튼에 손가락을 올려주세요.", reply: { success, error in
-if success {
-// Fingerprint recognized
-self.present(vc, animated: true)
-} else {
-if let error = error {
-print(error.localizedDescription)
+    authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "홈 버튼에 손가락을 올려주세요.", reply: { success, error in
+        if success {
+            // Fingerprint recognized
+            self.present(vc, animated: true)
+        } else {
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    })
 }
-}
-})
 ```
 
 이로서 너무 간단하게 Touch ID 기능 구현이 완료되었다. 아마도 이 코드에 대해서 이해를 못할 사람은 없지 싶을 정도로 단순한 구조로 되어 있고, 또 그만큼 간편하게 구현할 수 있는 코드였다.
