@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "[공지] 올코인 v1.0.0"
+author: Junho Lee
+categories: AllCoin
+tags:	ios allcoin app notice
+cover:  "/assets/images/20171218_01.png"
+---
+
+안녕하세요. 올코인 개발자입니다.
+
+아직 기능이 많지 않은 앱이지만, 사용하기 가장 편리한 앱을 만들기 위해 적극적으로 피드백을 반영하고 개선하도록 하겠습니다.
+
+몇차례의 업데이트를 걸쳐 더 나아지는 모습을 보여줄 올코인을 기대해주세요.
+
+추가적으로 애플의 가상 물건 거래 제한 정책으로 기능 개발은 거의 완성하였지만 올코인에서는 아직까지 공식적으로 거래 기능을 지원하고 있지 않습니다.
+추후 애플의 정책이 변경될 경우 기능 지원 업데이트를 진행하겠습니다.
+
+코인의 모든 것! 올코인을 다운받아주셔서 감사하며
+성공적인 코인투자를 기원합니다!
+
+[jekyll]:      http://jekyllrb.com
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-help]: https://github.com/jekyll/jekyll-help
+[highlight]:   https://highlightjs.org/
+[lightbox]:    http://lokeshdhakar.com/projects/lightbox2/
+[jekyll-archive]: https://github.com/jekyll/jekyll-archives
+[liquid]: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
