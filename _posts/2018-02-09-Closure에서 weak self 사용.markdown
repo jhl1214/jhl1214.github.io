@@ -4,7 +4,7 @@ title:  "Closure에서 weak self 사용"
 author: Junho Lee
 categories: Develop
 tags:	ios swift closure weak self
-cover:  "/assets/images/swift_default.png"
+cover:  "/assets/images/swift_default.jpg"
 ---
 
 # Closure에서 weak self 사용
